@@ -1,11 +1,28 @@
 '''
 Input: a List of integers where every int except one shows up twice
 Returns: an integer
+
+Understand:
+    when a number is not a pair it should be returned.
+    
+    valid or invalid inputs
+        invalid: letters
+
+Plan:
+    count the times each appears
+    if the counter is not 2 at the end, return it
+    or
+    if i != i+1 and counter is not 2, return value[i]
+
+
+
 '''
 def single_number(arr):
-    # Your code here
+    
+    shows = 0 # the number of times a value appears
 
-    pass
+    for i in range(len(arr)):
+        #if the value
 
 
 if __name__ == '__main__':
