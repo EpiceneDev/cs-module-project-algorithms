@@ -6,6 +6,7 @@ Understand:
 takes an array of integers and moves each non-zero integer 
     to the left side of the array, 
     then returns the altered array
+
 doesn't matter what the order of the altered array
 
 Plan:
@@ -15,17 +16,26 @@ Plan:
 
 '''
 def moving_zeroes(arr):
+    # use 2 pointers to check for 0 one at each end
     left = 0
-    right = len(arr) - 1
+    right = len(arr) - 1 
 
+    # while they traverse towards eachother
     while left <= right:
+
+        # if left pointer value is 0 and right is not, swap 
+        # and increment left, decrement right
         if arr[left] == 0 and arr[right] != 0:
             arr[left], arr[right] = arr[right], arr[left]
             left +=1
             right -=1
+
         else: 
+            # otherwise if left is not zero, go to the next value
             if arr[left] != 0:
              left += 1
+
+            # and if right pointer value is zero, go to next location down
             if arr[right] == 0:
                 right -= 1
 
