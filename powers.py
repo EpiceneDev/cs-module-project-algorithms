@@ -17,7 +17,7 @@
 
 ### Let's not handle decimal numbers for b
 
-## Plan
+## Plan 
 ### We have two numbers, one or both may be negative
 
 ### Iterative or recursive?
@@ -97,7 +97,7 @@ def iter_power(a, b):
         return 1 / product
     else:
         return product
-        
+
 print(iter_power(2, 3) == (2 ** 3))
 print(iter_power(10, 2) == (10 ** 2))
 print(iter_power(10, 0) == (10 ** 0))

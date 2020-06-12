@@ -7,12 +7,15 @@ Understand:
     
     valid or invalid inputs
         invalid: letters
+        valid: integers
 
 Plan:
     count the times each appears
     if the counter is not 2 at the end, return it
     or
-    if i != i+1 and counter is not 2, return value[i]
+    if value[i] = value[i+1] and counter is at 2
+    increase pointers by one
+    elif i != i+1 and counter is not 2, return value[i]
 
 
 
